@@ -1,0 +1,10 @@
+<head>
+	<script src='https://cdn.plot.ly/plotly-2.18.2.min.js'></script>
+</head>
+
+<body>
+	<h1>Cảm biến: {{ data.sensor }}</h1>
+	<h1>Thời gian: <span id="timestamp">{{ data.timestamp }}</span></h1>
+	<div id='metric'></div>
+</body>
+<script src="{{ url_for('static', path='main.js') }}"></script>
